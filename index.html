@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Data & ERP Analyst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apple-blue': '#0071e3',
+                        'dark-bg': '#1a1a1a',
+                        'light-text': '#f5f5f7',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-light-text font-sans">
+
+    <header class="bg-gray-800 shadow-lg p-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl font-extrabold mb-2">Votre Prénom Nom</h1>
+            <p class="text-xl text-apple-blue mb-6">Analyste Données & ERP (SAP)</p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-8">
+        
+        <!-- BARRE DE FILTRES -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+            <div>
+                <label class="block text-sm font-medium mb-2 text-gray-400">Expérience</label>
+                <select id="filter-exp" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 outline-none focus:ring-2 focus:ring-apple-blue">
+                    <option value="all">Toutes les expériences</option>
+                </select>
+            </div>
+            <div>
+                <label class="block text-sm font-medium mb-2 text-gray-400">Projet spécifique</label>
+                <select id="filter-proj" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 outline-none focus:ring-2 focus:ring-apple-blue">
+                    <option value="all">Tous les projets</option>
+                </select>
+            </div>
+            <div>
+                <label class="block text-sm font-medium mb-2 text-gray-400">Compétence</label>
+                <select id="filter-skill" class="w-full bg-gray-800 border border-gray-700 rounded-lg p-3 outline-none focus:ring-2 focus:ring-apple-blue">
+                    <option value="all">Toutes les compétences</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- ZONE DE RÉSULTATS DYNAMIQUE -->
+        <section id="projets">
+            <h2 class="text-3xl font-semibold mb-8 border-b border-gray-700 pb-2">Projets & Expériences</h2>
+            <div id="results-container" class="space-y-8">
+                <!-- Le JavaScript injectera les cartes ici -->
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        let portfolioData = {};
+
+        // Charger le fichier JSON
+        async function init() {
+            try {
+                const response = await fetch('data.json');
+                portfolioData = await response.json();
+                
+                setupFilters();
+                render(); 
+            } catch (e) {
+                console.error("Erreur : Assurez-vous de lancer la page via un serveur (Live Server)", e);
+            }
+        }
+
+        // Remplir les menus déroulants
+        function setupFilters() {
+            const fill = (id, items, key) => {
+                const select = document.getElementById(id);
+                items.forEach(item => {
+                    const opt = document.createElement('option');
+                    opt.value = item.id;
+                    opt.textContent = item[key] || item.nom || item.titre;
+                    select.appendChild(opt);
+                });
+                select.addEventListener('change', render);
+            };
+
+            fill('filter-exp', portfolioData.experiences, 'titre');
+            fill('filter-proj', portfolioData.projets, 'titre');
+            fill('filter-skill', portfolioData.competences, 'nom');
+        }
+
+        // Afficher les cartes filtrées
+        function render() {
+            const fExp = document.getElementById('filter-exp').value;
+            const fProj = document.getElementById('filter-proj').value;
+            const fSkill = document.getElementById('filter-skill').value;
+            const container = document.getElementById('results-container');
+
+            container.innerHTML = '';
+
+            portfolioData.projets.forEach(proj => {
+                const matchExp = (fExp === 'all' || proj.exp_id === fExp);
+                const matchProj = (fProj === 'all' || proj.id === fProj);
+                const matchSkill = (fSkill === 'all' || proj.skills.includes(fSkill));
+
+                if (matchExp && matchProj && matchSkill) {
+                    // Trouver le nom de l'expérience liée
+                    const expName = portfolioData.experiences.find(e => e.id === proj.exp_id)?.titre || "";
+
+                    container.innerHTML += `
+                        <div class="bg-gray-800 p-6 rounded-xl border-l-4 border-apple-blue shadow-lg hover:transform hover:scale-[1.01] transition-all duration-300">
+                            <span class="text-xs font-bold text-apple-blue uppercase tracking-widest">${expName}</span>
+                            <h3 class="text-2xl font-bold mt-1 mb-3">${proj.titre}</h3>
+                            <p class="text-gray-300 mb-6 leading-relaxed">
+                                ${proj.description.replace(/\*\*(.*?)\*\*/g, '<strong class="text-white">$1</strong>')}
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                ${proj.skills.map(s => {
+                                    const skillName = portfolioData.competences.find(c => c.id === s)?.nom || s;
+                                    return `<span class="bg-blue-900/30 text-apple-blue text-xs font-semibold px-3 py-1 rounded-full border border-apple-blue/20">${skillName}</span>`;
+                                }).join('')}
+                            </div>
+                            <div class="bg-gray-700/50 h-48 rounded-lg flex items-center justify-center text-gray-500 border border-gray-600 border-dashed italic">
+                                [Aperçu visuel : ${proj.image}]
+                            </div>
+                        </div>
+                    `;
+                }
+            });
+        }
+
+        init();
+    </script>
+</body>
+</html>

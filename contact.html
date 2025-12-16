@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - [Votre Prénom Nom]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apple-blue': '#0071e3',
+                        'dark-bg': '#1a1a1a',
+                        'light-text': '#f5f5f7',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-light-text font-sans">
+
+    <header class="bg-gray-800 shadow-lg p-6">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <!-- Bouton de retour à l'accueil -->
+            <a href="index.html" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                ← Retour Accueil
+            </a>
+            <!-- Bouton de langue pour la page contact -->
+             <a href="contact_en.html" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                English 🇬🇧
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-8">
+        <h1 class="text-4xl font-extrabold mb-6">Contactez-moi</h1>
+
+        <div class="bg-gray-800 p-8 rounded-lg shadow-md">
+            <p class="mb-4">N'hésitez pas à me contacter directement par e-mail ou via LinkedIn pour toute opportunité professionnelle ou question.</p>
+            
+            <div class="space-y-4">
+                <p><strong>Email :</strong> <a href="mailto:[Votre Email]" class="text-apple-blue hover:underline">[Votre Email]</a></p>
+                <p><strong>Téléphone :</strong> [Votre Numéro de Téléphone]</p>
+                <p><strong>LinkedIn :</strong> <a href="[Lien vers votre LinkedIn]" target="_blank" class="text-apple-blue hover:underline">[Lien vers votre LinkedIn]</a></p>
+                <p><strong>Localisation :</strong> Cork, Irlande</p>
+            </div>
+            
+            <!-- Un formulaire HTML simple n'envoie pas d'email directement sans backend, donc un simple lien mailto est souvent suffisant pour un portfolio statique. -->
+            
+            <a href="mailto:[Votre Email]" class="mt-8 inline-block bg-apple-blue hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                Envoyer un E-mail
+            </a>
+        </div>
+    </main>
+
+    <footer class="text-center mt-12 p-4 border-t border-gray-700 text-gray-500">
+        <p>&copy; 2025 [Votre Prénom Nom].</p>
+    </footer>
+
+</body>
+</html>

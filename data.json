@@ -1,0 +1,31 @@
+{
+  "experiences": [
+    { "id": "exp-alliade", "titre": "Alliade Habitat - Analyste SAP" },
+    { "id": "exp-area", "titre": "AREA - Data Analyst" }
+  ],
+  "projets": [
+    {
+      "id": "proj-sap",
+      "titre": "Extraction & Automatisation SAP",
+      "exp_id": "exp-alliade",
+      "skills": ["sap", "python", "powerbi"],
+      "description": "**Objectif :** Automatiser la collecte de données clients... **Impact :** 56 000 participants.",
+      "image": "Lien_Image_1"
+    },
+    {
+      "id": "proj-peage",
+      "titre": "Modélisation Prédictive Péages",
+      "exp_id": "exp-area",
+      "skills": ["python", "sql", "r"],
+      "description": "**Objectif :** Analyser les non-paiements... **Impact :** Dashboards décisionnels.",
+      "image": "Lien_Image_2"
+    }
+  ],
+  "competences": [
+    { "id": "sap", "nom": "SAP (ERP)" },
+    { "id": "python", "nom": "Python" },
+    { "id": "powerbi", "nom": "Power BI" },
+    { "id": "sql", "nom": "SQL" },
+    { "id": "r", "nom": "Langage R" }
+  ]
+}
