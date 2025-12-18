@@ -1,9 +1,20 @@
 {
-  "experiences": [
-    { "id": "exp-alliade", "titre": "Alliade Habitat - Analyste SAP" },
-    { "id": "exp-area", "titre": "AREA - Data Analyst" }
-  ],
-  "projets": [
+  
+    "experiences": [
+      { 
+        "id": "exp-alliade", 
+        "titre": "Alliade Habitat - Analyste SAP",
+        "periode": "2022 - 2024",
+        "details": "Gestion du parc ERP, support utilisateur de niveau 2, et optimisation des flux de données entre SAP et les outils de reporting."
+      },
+      { 
+        "id": "exp-area", 
+        "titre": "AREA - Data Analyst",
+        "periode": "2021 (6 mois)",
+        "details": "Analyse statistique des flux de trafic et automatisation des tableaux de bord de performance réseau."
+      }
+    ],
+    "projets":[
     {
       "id": "proj-sap",
       "titre": "Extraction & Automatisation SAP",
@@ -21,11 +32,12 @@
       "image": "Lien_Image_2"
     }
   ],
-  "competences": [
+    "competences": [
     { "id": "sap", "nom": "SAP (ERP)" },
     { "id": "python", "nom": "Python" },
     { "id": "powerbi", "nom": "Power BI" },
     { "id": "sql", "nom": "SQL" },
     { "id": "r", "nom": "Langage R" }
-  ]
+  ] 
+
 }

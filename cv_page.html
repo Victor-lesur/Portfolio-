@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | [Votre Prénom Nom]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apple-blue': '#0071e3',
+                        'dark-bg': '#1a1a1a',
+                        'light-text': '#f5f5f7',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-light-text font-sans">
+
+    <header class="bg-gray-800 shadow-lg p-6">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                ← Retour Accueil
+            </a>
+            <!-- Le bouton de langue reste pour changer l'interface de la page si besoin -->
+             <a href="cv_page_en.html" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                English 🇬🇧
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-8">
+        <h1 class="text-4xl font-extrabold mb-6">Mon Curriculum Vitae</h1>
+
+        <div class="bg-gray-800 p-8 rounded-lg shadow-md mb-8">
+            <p class="mb-6">
+                Sélectionnez la langue du CV que vous souhaitez visualiser ou télécharger ci-dessous.
+            </p>
+            
+            <!-- CONTRÔLES DE LANGUE ET ACTIONS -->
+            <div class="flex flex-wrap items-center gap-4 mb-8">
+                
+                <!-- Sélecteur de langue -->
+                <div>
+                    <label for="cv-select" class="mr-3">Choisir la langue :</label>
+                    <select id="cv-select" class="bg-gray-700 p-2 rounded-lg" onchange="updateCVDisplay()">
+                        <option value="CV_FR.pdf">Français (FR)</option>
+                        <option value="CV_EN.pdf">Anglais (EN)</option>
+                    </select>
+                </div>
+
+                <!-- Bouton Télécharger -->
+                <a id="download-btn" href="CV_FR.pdf" download class="bg-apple-blue hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center gap-2">
+                    Télécharger le CV
+                </a>
+
+                 <!-- Bouton Visualiser dans un nouvel onglet -->
+                 <a id="view-btn" href="CV_FR.pdf" target="_blank" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center gap-2">
+                    Visualiser (Nouvel onglet)
+                </a>
+            </div>
+
+            <!-- ZONE D'AFFICHAGE DU PDF -->
+            <div class="mt-8">
+                <h2 class="text-2xl font-semibold mb-4" id="view-title">Visualisation (Français)</h2>
+                <embed id="cv-embed" src="CV_FR.pdf" type="application/pdf" width="100%" height="800px" class="rounded-lg shadow-xl">
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        // Fonction JavaScript pour mettre à jour la source du PDF et les liens
+        function updateCVDisplay() {
+            const select = document.getElementById('cv-select');
+            const pdfSource = select.value;
+            const embedElement = document.getElementById('cv-embed');
+            const downloadBtn = document.getElementById('download-btn');
+            const viewBtn = document.getElementById('view-btn');
+            const viewTitle = document.getElementById('view-title');
+
+            // Met à jour la source de la visualisation intégrée
+            embedElement.src = pdfSource;
+
+            // Met à jour le lien de téléchargement (l'attribut download reste actif)
+            downloadBtn.href = pdfSource;
+
+            // Met à jour le lien de visualisation dans un nouvel onglet
+            viewBtn.href = pdfSource;
+            
+            // Met à jour le titre pour l'UX
+            viewTitle.textContent = "Visualisation (" + (pdfSource === 'CV_FR.pdf' ? 'Français' : 'Anglais') + ")";
+        }
+    </script>
+</body>
+</html>
