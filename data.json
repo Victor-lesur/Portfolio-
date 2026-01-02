@@ -1,43 +1,122 @@
 {
-  
-    "experiences": [
-      { 
-        "id": "exp-alliade", 
-        "titre": "Alliade Habitat - Analyste SAP",
-        "periode": "2022 - 2024",
-        "details": "Gestion du parc ERP, support utilisateur de niveau 2, et optimisation des flux de données entre SAP et les outils de reporting."
-      },
-      { 
-        "id": "exp-area", 
-        "titre": "AREA - Data Analyst",
-        "periode": "2021 (6 mois)",
-        "details": "Analyse statistique des flux de trafic et automatisation des tableaux de bord de performance réseau."
-      }
-    ],
-    "projets":[
+  "experiences": [
     {
-      "id": "proj-sap",
-      "titre": "Extraction & Automatisation SAP",
-      "exp_id": "exp-alliade",
-      "skills": ["sap", "python", "powerbi"],
-      "description": "**Objectif :** Automatiser la collecte de données clients... **Impact :** 56 000 participants.",
-      "image": "Lien_Image_1"
+      "id": "exp-region-occitanie",
+      "titre": "La Région Occitanie - Gestionnaire de base de données",
+      "periode": "Juillet 2025 - Août 2025",
+      "type": "pro",
+      "details": "Gestion et optimisation de la base de données (nettoyage, organisation). Traitement des demandes utilisateurs et suivi des requêtes au sein du centre d'appels.",
+      "competences_cles": ["sql", "gestion-bd", "support-utilisateur", "rigueur"]
     },
     {
-      "id": "proj-peage",
-      "titre": "Modélisation Prédictive Péages",
-      "exp_id": "exp-area",
-      "skills": ["python", "sql", "r"],
-      "description": "**Objectif :** Analyser les non-paiements... **Impact :** Dashboards décisionnels.",
-      "image": "Lien_Image_2"
+      "id": "exp-adecco-interim",
+      "titre": "ADECCO/RAS INTERIM - Travailleur Temporaire",
+      "periode": "Avril 2025 - Juillet 2025",
+      "type": "job",
+      "details": "Missions de logistique, manutention et livraison. Adaptabilité rapide à différents environnements de travail (quai, entrepôt, extérieur).",
+      "competences_cles": ["logistique", "polyvalence", "travail-equipe", "securite"]
+    },
+    {
+      "id": "job-intersport",
+      "titre": "Intersport - Vendeur / Technicien",
+      "periode": "Février 2025 - Avril 2025",
+      "type": "job",
+      "details": "Conseil technique, vente et location de matériel de montagne. Maintenance et réparation du matériel de ski.",
+      "competences_cles": ["relation-client", "vente", "maintenance-technique", "gestion-caisse"]
+    },
+    {
+      "id": "job-bergerie-2025",
+      "titre": "La Bergerie - Serveur",
+      "periode": "Janvier 2025 - Mars 2025",
+      "type": "job",
+      "details": "Service en salle, prise de commandes et gestion de la caisse en période de forte affluence.",
+      "competences_cles": ["gestion-stress", "relation-client", "encaissement"]
+    },
+    {
+      "id": "form-but",
+      "titre": "BUT Science des Données - IUT Lumière Lyon 2",
+      "periode": "Septembre 2021 - Septembre 2024",
+      "type": "formation",
+      "details": "Apprentissage des statistiques, du machine learning, de la gestion de projet data et des bases de données NoSQL.",
+      "competences_cles": ["python", "r", "neo4j", "postgresql", "machine-learning", "gestion-de-projet"]
+    },
+    {
+      "id": "exp-alliade",
+      "titre": "Alliade Habitat - Analyste en Études Statistiques",
+      "periode": "Septembre 2022 - Septembre 2024",
+      "type": "pro",
+      "details": "Réalisation d'enquêtes de satisfaction, analyse qualitative et quantitative, et automatisation de tableaux de bord KPI.",
+      "competences_cles": ["sphinx", "python", "powerbi", "sap", "analyse-statistique", "dataviz"]
+    },
+    {
+      "id": "exp-area",
+      "titre": "AREA/APRR - Data Analyst (Stage)",
+      "periode": "Avril 2021 - Juin 2021",
+      "type": "pro",
+      "details": "Analyse de la fraude au péage et aide à la décision pour les poursuites judiciaires. Contribution au projet Flux Libre.",
+      "competences_cles": ["tableau", "sql", "excel", "analyse-fraude", "reporting"]
+    },
+    {
+      "id": "benevolat-padel",
+      "titre": "Open de France de Padel - Personnel Événementiel",
+      "periode": "2016 - 2017",
+      "type": "benevolat",
+      "details": "Organisation logistique, recherche de sponsors et coordination des prestataires pour un événement sportif majeur.",
+      "competences_cles": ["evenementiel", "sponsoring", "communication", "logistique"]
+    },
+    {
+      "id": "form-but",
+      "titre": "BUT Science des Données - IUT Lumière Lyon 2",
+      "periode": "Septembre 2021 - Septembre 2024",
+      "type": "formation",
+      "details": "Apprentissage des statistiques, du machine learning, de la gestion de projet data et des bases de données NoSQL.",
+      "competences_cles": ["python", "r", "neo4j", "postgresql", "machine-learning", "gestion-de-projet"]
     }
   ],
-    "competences": [
-    { "id": "sap", "nom": "SAP (ERP)" },
-    { "id": "python", "nom": "Python" },
-    { "id": "powerbi", "nom": "Power BI" },
+  "projets": [
+    {
+      "id": "proj-stat-and-more",
+      "titre": "Outil d'Aide à la Décision - Stat and More",
+      "exp_id": "form-but",
+      "skills": ["gestion-de-projet", "bi", "agile"],
+      "description": "**Objectif :** Conception complète d'un outil décisionnel incluant l'analyse concurrentielle et la planification (Triangle d'or)."
+    },
+    {
+      "id": "proj-nosql-neo4j",
+      "titre": "Migration NoSQL & Impact Euro 2016",
+      "exp_id": "form-but",
+      "skills": ["postgresql", "neo4j", "cypher", "etl"],
+      "description": "**Objectif :** Migration de données relationnelles vers Neo4j pour analyser l'impact urbain d'un événement sportif."
+    },
+    {
+      "id": "proj-musee-pompiers",
+      "titre": "Enquête Statistique - Musée des Sapeurs-Pompiers",
+      "exp_id": "form-but",
+      "skills": ["sphinx", "analyse-statistique", "dataviz"],
+      "description": "**Objectif :** Étude des publics, conception de questionnaires sur Sphinx et nettoyage de données aberrantes."
+    },
+    {
+      "id": "proj-fraude-area",
+      "titre": "Analyse de Fraude & Dashboards",
+      "exp_id": "exp-area",
+      "skills": ["tableau", "sql", "excel"],
+      "description": "**Objectif :** Identifier et classer les principaux délinquants pour des poursuites judiciaires."
+    }
+  ],
+  "competences": [
     { "id": "sql", "nom": "SQL" },
-    { "id": "r", "nom": "Langage R" }
-  ] 
-
+    { "id": "postgresql", "nom": "PostgreSQL" },
+    { "id": "neo4j", "nom": "Neo4j (Graphes)" },
+    { "id": "python", "nom": "Python" },
+    { "id": "r", "nom": "Langage R" },
+    { "id": "tableau", "nom": "Tableau Software" },
+    { "id": "powerbi", "nom": "Power BI" },
+    { "id": "sphinx", "nom": "Sphinx" },
+    { "id": "sap", "nom": "SAP ERP" },
+    { "id": "gestion-de-projet", "nom": "Gestion de Projet" },
+    { "id": "logistique", "nom": "Logistique" },
+    { "id": "analyse-statistique", "nom": "Analyse Statistique" },
+    { "id": "dataviz", "nom": "Visualisation de données" },
+    { "id": "relation-client", "nom": "Relation Client" }
+  ]
 }
