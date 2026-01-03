@@ -46,10 +46,10 @@
 </head>
 <body class="bg-dark-bg text-light-text font-sans selection:bg-apple-blue selection:text-white">
 
-    <header class="sticky top-0 z-50 bg-dark-bg/80 backdrop-blur-md border-b border-white/10 px-8 py-6">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    <header class="sticky top-0 z-50 bg-dark-bg/80 backdrop-blur-md border-b border-white/10 px-4 md:px-8 py-4 md:py-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
             <div class="text-center md:text-left">
-                <h1 class="text-3xl font-black tracking-tighter text-white uppercase italic">
+                <h1 class="text-2xl md:text-3xl font-black tracking-tighter text-white uppercase italic">
                     Victor <span class="text-apple-blue not-italic">Lesur</span>
                 </h1>
                 <div class="flex items-center justify-center md:justify-start gap-2 mt-1">
@@ -57,94 +57,91 @@
                         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                     </span>
-                    <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">Data Science & Analytics</p>
+                    <p class="text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-widest">Data Science & Analytics</p>
                 </div>
             </div>
 
-            <nav class="flex items-center gap-3 bg-white/5 p-1.5 rounded-2xl border border-white/10">
-                <a href="cv_page.html" class="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold transition-all hover:bg-white/10 hover:text-apple-blue">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
+            <nav class="flex items-center gap-2 md:gap-3 bg-white/5 p-1.5 rounded-2xl border border-white/10 w-full md:w-auto justify-center">
+                <a href="cv_page.html" class="flex items-center gap-2 px-3 py-2 rounded-xl text-xs md:text-sm font-bold transition-all hover:bg-white/10 hover:text-apple-blue whitespace-nowrap">
                     Mon CV
                 </a>
-                <a href="https://www.linkedin.com/in/victor--lesur/" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold transition-all hover:bg-[#0077b5]/10 hover:text-[#0077b5]">
-                    <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <a href="https://www.linkedin.com/in/victor--lesur/" target="_blank" class="flex items-center gap-2 px-3 py-2 rounded-xl text-xs md:text-sm font-bold transition-all hover:bg-[#0077b5]/10 hover:text-[#0077b5] whitespace-nowrap">
                     LinkedIn
                 </a>
-                <a href="contact.html" class="bg-apple-blue hover:bg-blue-600 text-white px-5 py-2 rounded-xl text-sm font-bold shadow-lg shadow-apple-blue/20 transition-all transform hover:scale-105 active:scale-95">
+                <a href="contact.html" class="bg-apple-blue hover:bg-blue-600 text-white px-4 py-2 rounded-xl text-xs md:text-sm font-bold shadow-lg shadow-apple-blue/20 transition-all transform hover:scale-105 active:scale-95 whitespace-nowrap">
                     Me Contacter
                 </a>
             </nav>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto p-8">
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
         
-        <div class="bg-filter-panel border border-white/10 rounded-3xl p-8 mb-12 shadow-2xl relative overflow-hidden">
-            <div class="flex justify-between items-center mb-8">
+        <div class="bg-filter-panel border border-white/10 rounded-3xl p-6 md:p-8 mb-12 shadow-2xl relative overflow-hidden">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
                 <div class="flex items-center gap-3">
                     <div class="bg-apple-blue/20 p-2 rounded-lg">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-apple-blue" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z" clip-rule="evenodd" />
                         </svg>
                     </div>
-                    <h2 class="text-lg font-bold tracking-tight text-white/90 uppercase text-xs tracking-[0.2em]">Filtres & Exploration</h2>
+                    <h2 class="text-white/90 uppercase text-xs font-bold tracking-[0.2em]">Filtres & Exploration</h2>
                 </div>
-                <button id="reset-btn" class="bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl px-4 py-2 text-xs font-bold transition-all flex items-center gap-2">
+                <button id="reset-btn" class="w-full md:w-auto bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl px-4 py-2 text-xs font-bold transition-all flex items-center justify-center gap-2 text-gray-300 hover:text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
-                    Réinitialiser
+                    Réinitialiser tout
                 </button>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
                 
                 <div class="lg:col-span-5">
-                    <label class="block text-[10px] font-black text-gray-500 uppercase tracking-widest mb-4">Catégories d'expériences</label>
+                    <label class="block text-[10px] font-black text-gray-500 uppercase tracking-widest mb-3">Types d'expériences</label>
                     <div class="flex flex-wrap gap-2">
-                        <label class="cursor-pointer">
+                        <label class="cursor-pointer flex-1 md:flex-none">
                             <input type="checkbox" value="pro" class="type-checkbox hidden">
-                            <span class="px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm font-semibold transition-all block">💼 Pro</span>
+                            <span class="text-center px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm font-semibold transition-all block hover:bg-white/10">💼 Pro</span>
                         </label>
-                        <label class="cursor-pointer">
+                        <label class="cursor-pointer flex-1 md:flex-none">
                             <input type="checkbox" value="formation" class="type-checkbox hidden">
-                            <span class="px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm font-semibold transition-all block">🎓 Formation</span>
+                            <span class="text-center px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm font-semibold transition-all block hover:bg-white/10">🎓 Études</span>
                         </label>
-                        <label class="cursor-pointer">
+                        <label class="cursor-pointer flex-1 md:flex-none">
                             <input type="checkbox" value="job" class="type-checkbox hidden">
-                            <span class="px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm font-semibold transition-all block">🛠️ Jobs</span>
+                            <span class="text-center px-4 py-2.5 rounded-xl border border-white/10 bg-white/5 text-sm font-semibold transition-all block hover:bg-white/10">🛠️ Jobs</span>
                         </label>
                     </div>
                 </div>
 
-                <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div class="relative">
-                        <label class="block text-[10px] font-black text-gray-500 uppercase tracking-widest mb-2">Expérience</label>
-                        <select id="filter-exp" class="w-full bg-black/40 border border-white/10 rounded-xl p-3 text-sm text-white focus:ring-2 focus:ring-apple-blue outline-none transition-all">
-                            <option value="all">Toutes</option>
-                        </select>
-                    </div>
-                    <div class="relative">
-                        <label class="block text-[10px] font-black text-gray-500 uppercase tracking-widest mb-2">Projet</label>
-                        <select id="filter-proj" class="w-full bg-black/40 border border-white/10 rounded-xl p-3 text-sm text-white focus:ring-2 focus:ring-apple-blue outline-none transition-all">
-                            <option value="all">Tous</option>
-                        </select>
-                    </div>
-                    <div class="relative">
-                        <label class="block text-[10px] font-black text-gray-500 uppercase tracking-widest mb-2">Skill</label>
-                        <select id="filter-skill" class="w-full bg-black/40 border border-white/10 rounded-xl p-3 text-sm text-white focus:ring-2 focus:ring-apple-blue outline-none transition-all">
-                            <option value="all">Toutes</option>
-                        </select>
+                <div class="lg:col-span-7 w-full">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="relative group">
+                            <label class="block text-[10px] font-black text-gray-500 uppercase tracking-widest mb-2 group-focus-within:text-apple-blue transition-colors">Expérience</label>
+                            <select id="filter-exp" class="w-full bg-black/40 border border-white/10 rounded-xl p-3 text-sm text-white focus:ring-2 focus:ring-apple-blue outline-none transition-all truncate pr-8 appearance-none">
+                                <option value="all">Toutes</option>
+                            </select>
+                            <div class="pointer-events-none absolute right-3 bottom-3.5 text-gray-400">▼</div>
+                        </div>
+                        <div class="relative group">
+                            <label class="block text-[10px] font-black text-gray-500 uppercase tracking-widest mb-2 group-focus-within:text-apple-blue transition-colors">Projet</label>
+                            <select id="filter-proj" class="w-full bg-black/40 border border-white/10 rounded-xl p-3 text-sm text-white focus:ring-2 focus:ring-apple-blue outline-none transition-all truncate pr-8 appearance-none">
+                                <option value="all">Tous</option>
+                            </select>
+                            <div class="pointer-events-none absolute right-3 bottom-3.5 text-gray-400">▼</div>
+                        </div>
+                        <div class="relative group">
+                            <label class="block text-[10px] font-black text-gray-500 uppercase tracking-widest mb-2 group-focus-within:text-apple-blue transition-colors">Skill</label>
+                            <select id="filter-skill" class="w-full bg-black/40 border border-white/10 rounded-xl p-3 text-sm text-white focus:ring-2 focus:ring-apple-blue outline-none transition-all truncate pr-8 appearance-none">
+                                <option value="all">Toutes</option>
+                            </select>
+                            <div class="pointer-events-none absolute right-3 bottom-3.5 text-gray-400">▼</div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="mt-8 pt-6 border-t border-white/5 flex items-center justify-between">
-                <div id="filter-counter" class="text-[11px] font-mono text-gray-400"></div>
-                <div class="h-1.5 w-24 bg-white/5 rounded-full overflow-hidden">
-                    <div class="h-full bg-apple-blue w-2/3 shadow-[0_0_10px_#0071e3]"></div>
+            <div id="filter-counter" class="mt-8 pt-6 border-t border-white/5 grid grid-cols-2 md:grid-cols-4 gap-4 items-center">
                 </div>
-            </div>
         </div>
 
         <section id="projets">
@@ -161,12 +158,21 @@
             const response = await fetch('data.json');
             portfolioData = await response.json();
             setupFilters();
-            loadFiltersFromURL();
-
+            
             document.getElementById('reset-btn').addEventListener('click', resetAllFilters);
-            document.querySelectorAll('.type-checkbox').forEach(cb => cb.addEventListener('change', () => { updateURL(); render(); }));
+            document.querySelectorAll('.type-checkbox').forEach(cb => {
+                cb.addEventListener('change', () => { updateURL(); render(); });
+            });
+            ['filter-exp', 'filter-proj', 'filter-skill'].forEach(id => {
+                document.getElementById(id).addEventListener('change', () => {
+                    validateSelections(id);
+                    updateURL(); 
+                    render(); 
+                });
+            });
             document.getElementById('results-container').addEventListener('click', handleGlobalClick);
 
+            loadFiltersFromURL();
             render(); 
         } catch (e) { console.error("Erreur chargement données", e); }
     }
@@ -182,11 +188,19 @@
                 opt.textContent = item[key] || item.nom || item.titre;
                 select.appendChild(opt);
             });
-            select.addEventListener('change', () => { updateURL(); render(); });
         };
         fill('filter-exp', portfolioData.experiences, 'titre');
         fill('filter-proj', portfolioData.projets, 'titre');
         fill('filter-skill', portfolioData.competences, 'nom');
+    }
+
+    function validateSelections(changedFilterId) {
+        const expVal = document.getElementById('filter-exp').value;
+        const projVal = document.getElementById('filter-proj').value;
+        if (changedFilterId === 'filter-exp' && expVal !== 'all' && projVal !== 'all') {
+            const proj = portfolioData.projets.find(p => p.id === projVal);
+            if (proj && proj.exp_id !== expVal) document.getElementById('filter-proj').value = 'all';
+        }
     }
 
     function handleGlobalClick(e) {
@@ -194,6 +208,7 @@
         if (expCard) {
             const expId = expCard.getAttribute('data-exp-id');
             document.getElementById('filter-exp').value = expId;
+            document.getElementById('filter-proj').value = 'all';
             updateURL(); render();
             window.scrollTo({ top: 0, behavior: 'smooth' });
             return;
@@ -239,52 +254,90 @@
         updateURL(); render();
     }
 
+    function updateDropdownVisibility(validExpIds, validProjIds, validSkillIds) {
+        const updateOptions = (selectId, validIds) => {
+            const select = document.getElementById(selectId);
+            Array.from(select.options).forEach(opt => {
+                if (opt.value === 'all') return;
+                const isValid = validIds.includes(opt.value);
+                opt.hidden = !isValid;
+                opt.disabled = !isValid;
+                if (!isValid && select.value === opt.value) select.value = 'all';
+            });
+        };
+        updateOptions('filter-exp', validExpIds);
+        updateOptions('filter-proj', validProjIds);
+        updateOptions('filter-skill', validSkillIds);
+    }
+
+    // --- MISE A JOUR DU COMPTEUR ESTHETIQUE ---
+    function updateCounterVisual(totalProjs, currentProjs, totalExps, currentExps) {
+        const percent = totalProjs > 0 ? Math.round((currentProjs / totalProjs) * 100) : 0;
+        
+        const html = `
+            <div class="flex flex-col">
+                <span class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Expériences</span>
+                <span class="text-2xl font-black text-white">${currentExps}<span class="text-sm text-gray-500 font-normal">/${totalExps}</span></span>
+            </div>
+            <div class="flex flex-col border-l border-white/10 pl-4">
+                <span class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">Projets</span>
+                <span class="text-2xl font-black text-apple-blue">${currentProjs}<span class="text-sm text-gray-500 font-normal"> Visibles</span></span>
+            </div>
+            <div class="col-span-2 md:col-span-2 flex flex-col justify-center pl-0 md:pl-4">
+                <div class="flex justify-between text-[10px] font-bold uppercase tracking-widest mb-1">
+                    <span class="text-gray-400">SELECTION</span>
+                    <span class="text-apple-blue">${percent}%</span>
+                </div>
+                <div class="h-2 w-full bg-gray-700 rounded-full overflow-hidden shadow-inner">
+                    <div class="h-full bg-gradient-to-r from-blue-600 to-apple-blue rounded-full transition-all duration-700 ease-out shadow-[0_0_15px_rgba(0,113,227,0.5)]" style="width: ${percent}%"></div>
+                </div>
+            </div>
+        `;
+        document.getElementById('filter-counter').innerHTML = html;
+    }
+
     function render() {
         const checkedTypes = Array.from(document.querySelectorAll('.type-checkbox:checked')).map(cb => cb.value);
-        const fExpSelect = document.getElementById('filter-exp');
-        const fProjSelect = document.getElementById('filter-proj');
-        const fSkillSelect = document.getElementById('filter-skill');
+        const fExp = document.getElementById('filter-exp').value;
+        const fProj = document.getElementById('filter-proj').value;
+        const fSkill = document.getElementById('filter-skill').value;
+
+        let validExps = portfolioData.experiences.filter(e => checkedTypes.length === 0 || checkedTypes.includes(e.type));
+        
+        let validProjs = portfolioData.projets.filter(p => {
+            const belongToValidExp = validExps.some(e => e.id === p.exp_id);
+            const matchExpFilter = fExp === 'all' || p.exp_id === fExp;
+            const matchSkillFilter = fSkill === 'all' || p.skills.includes(fSkill);
+            return belongToValidExp && matchExpFilter && matchSkillFilter;
+        });
+
+        let validSkillIds = [...new Set(validProjs.flatMap(p => p.skills))];
+
+        if (fSkill !== 'all') {
+             const expIdsWithSkill = validProjs.map(p => p.exp_id);
+             validExps = validExps.filter(e => expIdsWithSkill.includes(e.id));
+        }
+
+        updateDropdownVisibility(validExps.map(e => e.id), validProjs.map(p => p.id), validSkillIds);
+
         const container = document.getElementById('results-container');
         const expDetailsContainer = document.getElementById('experience-details');
-
-        const validExps = portfolioData.experiences.filter(e => checkedTypes.length === 0 || checkedTypes.includes(e.type));
-        const validExpIds = validExps.map(e => e.id);
         
-        Array.from(fExpSelect.options).forEach(opt => {
-            if (opt.value === 'all') return;
-            opt.disabled = !validExpIds.includes(opt.value);
-            opt.hidden = !validExpIds.includes(opt.value);
-        });
-        if (fExpSelect.options[fExpSelect.selectedIndex].disabled) fExpSelect.value = 'all';
-
-        const fExp = fExpSelect.value;
-        const fProj = fProjSelect.value;
-        const fSkill = fSkillSelect.value;
-
         container.innerHTML = '';
         expDetailsContainer.innerHTML = '';
 
-        if (fExp === 'all' && fProj === 'all' && fSkill === 'all') {
+        const isDefaultView = fExp === 'all' && fProj === 'all' && fSkill === 'all';
+
+        if (isDefaultView) {
             renderPanorama(container, validExps);
         } else {
-            renderFilteredView(fExp, fProj, fSkill, container, expDetailsContainer, checkedTypes);
+            renderFilteredView(fExp, fProj, fSkill, container, expDetailsContainer, validExps, validProjs);
         }
 
-        const filteredProjsCount = portfolioData.projets.filter(p => {
-            const parentExp = portfolioData.experiences.find(e => e.id === p.exp_id);
-            const matchType = checkedTypes.length === 0 || checkedTypes.includes(parentExp?.type);
-            const matchExp = fExp === 'all' || p.exp_id === fExp;
-            const matchProj = fProj === 'all' || p.id === fProj;
-            const matchSkill = fSkill === 'all' || p.skills.includes(fSkill);
-            return matchType && matchExp && matchProj && matchSkill;
-        }).length;
-
-        document.getElementById('filter-counter').innerHTML = `
-            <span class="text-white font-bold">${validExps.length}</span> EXPÉRIENCES DISPONIBLES / 
-            <span class="text-apple-blue font-bold">${filteredProjsCount}</span> PROJETS FILTRÉS
-        `;
+        updateCounterVisual(portfolioData.projets.length, validProjs.length, portfolioData.experiences.length, validExps.length);
     }
 
+    // --- RENDU PANORAMA AVEC LIMITATION > 3 PROJETS ---
     function renderPanorama(container, list) {
         const styles = {
             pro: { border: 'border-blue-500/50', bg: 'bg-blue-500/5', text: 'text-blue-400', badge: 'border-blue-500', icon: '💼' },
@@ -296,35 +349,48 @@
             const s = styles[exp.type] || styles.pro;
             const projs = portfolioData.projets.filter(p => p.exp_id === exp.id);
             const allSkillIds = [...new Set(projs.flatMap(p => p.skills))];
+            
+            // Limitation à 3 projets
+            const DISPLAY_LIMIT = 3;
+            const visibleProjs = projs.slice(0, DISPLAY_LIMIT);
+            const remainingCount = projs.length - DISPLAY_LIMIT;
+
             const skillBadges = allSkillIds.slice(0, 5).map(sid => {
                 const sk = portfolioData.competences.find(c => c.id === sid);
                 return sk ? `<span class="text-[10px] px-2 py-1 bg-gray-900/50 border border-gray-700 rounded text-gray-400">${sk.nom}</span>` : '';
             }).join('');
 
             container.innerHTML += `
-                <div data-exp-id="${exp.id}" class="group cursor-pointer bg-gray-800/40 p-8 rounded-2xl border-l-8 ${s.border} ${s.bg} animate-fade-in mb-6 transition-all hover:translate-x-2 hover:bg-gray-800/60 shadow-lg">
-                    <div class="flex justify-between items-start mb-6">
+                <div data-exp-id="${exp.id}" class="group cursor-pointer bg-gray-800/40 p-4 md:p-8 rounded-2xl border-l-8 ${s.border} ${s.bg} animate-fade-in mb-6 transition-all hover:translate-x-1 md:hover:translate-x-2 hover:bg-gray-800/60 shadow-lg">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-6 gap-4">
                         <div class="flex gap-4 items-center">
-                            <span class="text-3xl">${s.icon}</span>
+                            <span class="text-2xl md:text-3xl">${s.icon}</span>
                             <div>
                                 <span class="text-[10px] px-2 py-0.5 rounded border ${s.badge} ${s.text} uppercase font-bold tracking-widest">${exp.type}</span>
-                                <h3 class="text-2xl font-bold text-white mt-1 group-hover:text-apple-blue transition-colors">${exp.titre}</h3>
+                                <h3 class="text-xl md:text-2xl font-bold text-white mt-1 group-hover:text-apple-blue transition-colors">${exp.titre}</h3>
                             </div>
                         </div>
-                        <div class="text-right">
-                            <span class="${s.text} font-mono font-bold block">${exp.periode || ''}</span>
-                            <span class="text-[10px] text-gray-500 uppercase font-bold mt-1 block italic opacity-0 group-hover:opacity-100 transition-opacity tracking-widest">Détails →</span>
+                        <div class="text-left md:text-right w-full md:w-auto">
+                            <span class="${s.text} font-mono font-bold block text-sm md:text-base">${exp.periode || ''}</span>
+                            <span class="text-[10px] text-gray-500 uppercase font-bold mt-1 block italic opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity tracking-widest">Voir Détails →</span>
                         </div>
                     </div>
-                    <div class="grid md:grid-cols-2 gap-8 pointer-events-none opacity-80 group-hover:opacity-100 transition-opacity">
+                    <div class="grid md:grid-cols-2 gap-6 md:gap-8 pointer-events-none opacity-90 md:opacity-80 group-hover:opacity-100 transition-opacity">
                         <div>
-                            <p class="text-[10px] text-gray-500 uppercase mb-3 font-bold tracking-widest">Principales réalisations</p>
+                            <p class="text-[10px] text-gray-500 uppercase mb-3 font-bold tracking-widest">Réalisations</p>
                             <ul class="space-y-2 text-sm text-gray-300">
-                                ${projs.slice(0, 2).map(p => `<li class="flex items-center"><span class="w-1 h-1 ${s.text.replace('text', 'bg')} rounded-full mr-3"></span>${p.titre}</li>`).join('')}
+                                ${visibleProjs.map(p => `<li class="flex items-center"><span class="w-1.5 h-1.5 flex-shrink-0 ${s.text.replace('text', 'bg')} rounded-full mr-3"></span><span class="truncate">${p.titre}</span></li>`).join('')}
                             </ul>
+                            ${remainingCount > 0 ? `
+                                <div class="mt-3 flex items-center gap-2">
+                                    <span class="px-2 py-1 rounded bg-white/10 text-[10px] font-bold text-white border border-white/20 shadow-sm group-hover:bg-apple-blue group-hover:border-apple-blue transition-colors">
+                                        + ${remainingCount} autres projets
+                                    </span>
+                                </div>
+                            ` : ''}
                         </div>
-                        <div>
-                            <p class="text-[10px] text-gray-500 uppercase mb-3 font-bold tracking-widest">Mots-clés</p>
+                        <div class="hidden md:block">
+                            <p class="text-[10px] text-gray-500 uppercase mb-3 font-bold tracking-widest">Compétences clés</p>
                             <div class="flex flex-wrap gap-2">${skillBadges}</div>
                         </div>
                     </div>
@@ -332,7 +398,7 @@
         });
     }
 
-    function renderFilteredView(fExp, fProj, fSkill, container, expDetailsContainer, checkedTypes) {
+    function renderFilteredView(fExp, fProj, fSkill, container, expDetailsContainer, validExps, validProjs) {
         expDetailsContainer.innerHTML = `
             <button onclick="resetAllFilters()" class="mb-6 flex items-center gap-2 text-apple-blue hover:text-white transition-all font-bold text-sm group">
                 <span class="group-hover:-translate-x-1 transition-transform">←</span> Retour à la vue d'ensemble
@@ -343,40 +409,44 @@
             if (exp) {
                 const color = exp.type === 'formation' ? 'text-emerald-400' : (exp.type === 'job' ? 'text-amber-400' : 'text-apple-blue');
                 expDetailsContainer.innerHTML += `
-                    <div class="bg-gray-800 p-8 rounded-3xl border border-white/10 animate-fade-in mb-8 shadow-2xl relative overflow-hidden">
-                        <div class="absolute top-0 right-0 p-8 text-6xl opacity-10 font-black uppercase italic">${exp.type}</div>
-                        <h2 class="text-3xl font-extrabold text-white relative z-10">${exp.titre}</h2>
-                        <p class="${color} mt-1 font-mono font-bold uppercase text-sm tracking-widest relative z-10">${exp.periode || ''}</p>
-                        <p class="text-gray-300 mt-8 leading-relaxed text-lg border-l-4 border-apple-blue pl-6 italic max-w-3xl">${exp.details || ''}</p>
+                    <div class="bg-gray-800 p-6 md:p-8 rounded-3xl border border-white/10 animate-fade-in mb-8 shadow-2xl relative overflow-hidden">
+                        <div class="hidden md:block absolute top-0 right-0 p-8 text-8xl opacity-5 font-black uppercase italic select-none pointer-events-none">${exp.type}</div>
+                        <h2 class="text-2xl md:text-3xl font-extrabold text-white relative z-10">${exp.titre}</h2>
+                        <p class="${color} mt-1 font-mono font-bold uppercase text-xs md:text-sm tracking-widest relative z-10">${exp.periode || ''}</p>
+                        <p class="text-gray-300 mt-6 leading-relaxed text-base md:text-lg border-l-4 border-apple-blue pl-4 md:pl-6 italic max-w-4xl">${exp.details || 'Aucune description détaillée disponible.'}</p>
                     </div>`;
             }
         }
 
-        portfolioData.projets.forEach(proj => {
-            const parentExp = portfolioData.experiences.find(e => e.id === proj.exp_id);
-            const matchType = checkedTypes.length === 0 || checkedTypes.includes(parentExp?.type);
-            const matchExp = (fExp === 'all' || proj.exp_id === fExp);
-            const matchProj = (fProj === 'all' || proj.id === fProj);
-            const matchSkill = (fSkill === 'all' || proj.skills.includes(fSkill));
+        if (validProjs.length === 0) {
+            container.innerHTML = `<div class="text-center text-gray-500 py-12 italic">Aucun projet ne correspond à ces critères exacts.</div>`;
+            return;
+        }
 
-            if (matchType && matchExp && matchProj && matchSkill) {
-                let borderClass = parentExp.type === 'formation' ? 'border-emerald-500' : (parentExp.type === 'job' ? 'border-amber-500' : 'border-blue-500');
-                container.innerHTML += `
-                    <div class="bg-gray-800/60 p-8 rounded-2xl border-l-4 ${borderClass} shadow-lg animate-fade-in mb-6 group hover:bg-gray-800/80 transition-all">
+        validProjs.forEach(proj => {
+            if (fProj !== 'all' && proj.id !== fProj) return;
+
+            const parentExp = portfolioData.experiences.find(e => e.id === proj.exp_id);
+            let borderClass = parentExp.type === 'formation' ? 'border-emerald-500' : (parentExp.type === 'job' ? 'border-amber-500' : 'border-blue-500');
+            
+            container.innerHTML += `
+                <div class="bg-gray-800/60 p-6 md:p-8 rounded-2xl border-l-4 ${borderClass} shadow-lg animate-fade-in mb-6 group hover:bg-gray-800/80 transition-all">
+                    <div class="flex justify-between items-start">
                         <div class="text-[10px] font-bold text-gray-500 uppercase mb-2 tracking-[0.2em]">${parentExp.titre}</div>
-                        <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-apple-blue transition-colors">${proj.titre}</h3>
-                        <div class="text-gray-300 mb-8 leading-relaxed text-sm md:text-base">
-                            ${proj.description.replace(/\*\*(.*?)\*\*/g, '<strong class="text-white font-semibold">$1</strong>')}
-                        </div>
-                        <div class="flex flex-wrap gap-2">
-                            ${proj.skills.map(s => {
-                                const sk = portfolioData.competences.find(c => c.id === s);
-                                const isFocused = (fSkill === s);
-                                return `<span data-skill-id="${s}" class="cursor-pointer text-[11px] px-3 py-1.5 rounded-lg border transition-all ${isFocused ? 'bg-apple-blue border-apple-blue text-white shadow-lg' : 'bg-black/40 text-gray-400 border-white/5 hover:border-white/20'}">${sk ? sk.nom : s}</span>`;
-                            }).join('')}
-                        </div>
-                    </div>`;
-            }
+                        ${fSkill !== 'all' ? '<span class="text-[10px] bg-apple-blue/20 text-apple-blue px-2 py-1 rounded border border-apple-blue/30 font-bold">MATCH</span>' : ''}
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-white group-hover:text-apple-blue transition-colors">${proj.titre}</h3>
+                    <div class="text-gray-300 mb-8 leading-relaxed text-sm md:text-base">
+                        ${proj.description ? proj.description.replace(/\*\*(.*?)\*\*/g, '<strong class="text-white font-semibold">$1</strong>') : ''}
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        ${proj.skills.map(s => {
+                            const sk = portfolioData.competences.find(c => c.id === s);
+                            const isFocused = (fSkill === s);
+                            return `<span data-skill-id="${s}" class="cursor-pointer text-[10px] md:text-[11px] px-3 py-1.5 rounded-lg border transition-all ${isFocused ? 'bg-apple-blue border-apple-blue text-white shadow-lg scale-105' : 'bg-black/40 text-gray-400 border-white/5 hover:border-white/20 hover:text-white'}">${sk ? sk.nom : s}</span>`;
+                        }).join('')}
+                    </div>
+                </div>`;
         });
     }
 
